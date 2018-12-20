@@ -43,7 +43,7 @@ var populateUsers =  (done) => {
         var userOne = new User(users[0]).save();
         var userTwo = new User(users[1]).save();
 
-        return Promise.all([userOne,userTwo])
+        return Promise.all([userOne,userTwo]);
     }).then(() => done());
 }
 
